@@ -15,7 +15,6 @@ RUN go mod download
 COPY Makefile main.go ./
 COPY static/ static/
 COPY pkg/ pkg/
-COPY .git/ .
 RUN make build
 
 # ------------------------------------------------------------------------------
